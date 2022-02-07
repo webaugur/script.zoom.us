@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.zoom.us" name="Zoom Meeting" version="0.1" provider-name="augur">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+	</requires>
+	<extension point="xbmc.python.script" library="addon.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Zoom Meeting</summary>
+		<description lang="en">Connect to Zoom Meeting</description>
+		<license>GNU General Public License, v2</license>
+		<language></language>
+		<forum>http://forum.kodi.tv/</forum>
+		<source>https://github.com/webaugur/script.zoom.us</source>
+		<website>webaugur.com</website>
+		<email>dave@webaugur.com</email>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.png</fanart>
+			<screenshot>resources/screenshot-01.png</screenshot>
+		</assets>
+		<news>Created skeleton addon code!!!</news>
+	</extension>
+</addon>
