@@ -18,7 +18,6 @@ if os.access(zoom_exec, os.X_OK):
 
     # Execute Zoom without a shell
     subprocess.run([zoom_exec, " ", zoom_url, zoom_meetid])
-    #os.system(zoom_exec + " " + zoom_url + zoom_meetid)
 
 # If zoom is not executable then ask the user to install Zoom
 else: 
