@@ -1,4 +1,6 @@
 import os
+import sys
+import subprocess
 import xbmcaddon
 import xbmcgui
  
@@ -13,8 +15,10 @@ if os.access(zoom_exec, os.X_OK):
     # Meeting ID Input Dialog.
     #   Kodi should scrub the input as long as we are set to Numeric...
     zoom_meetid = xbmcgui.Dialog().input("Zoom.US Meeting ID", "", xbmcgui.INPUT_NUMERIC)
-    # execute zoom.us app natively on Linux
-    os.system(zoom_exec + " " + zoom_url + zoom_meetid)
+
+    # Execute Zoom without a shell
+    subprocess.run([zoom_exec, " ", zoom_url, zoom_meetid])
+    #os.system(zoom_exec + " " + zoom_url + zoom_meetid)
 
 # If zoom is not executable then ask the user to install Zoom
 else: 
